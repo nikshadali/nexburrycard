@@ -102,7 +102,7 @@ body{
   color: #fff;
 }
 .ribbon {
-  --f: .5em; /* control the folded part */
+  --f: .5em; 
   
   position: absolute;
   top: 0;
@@ -115,5 +115,5 @@ body{
     100% calc(100% - var(--f)),100% 100%,calc(100% - var(--f)) calc(100% - var(--f)),var(--f) calc(100% - var(--f)), 0 100%,0 calc(100% - var(--f)),999px calc(100% - var(--f) - 999px),calc(100% - 999px) calc(100% - var(--f) - 999px));
   transform: translate(calc((cos(45deg) - 1)*100%), -100%) rotate(-45deg);
   transform-origin: 100% 100%;
-  background-color: #00819d; /* the main color  */
+  background-color: #00819d; 
 }

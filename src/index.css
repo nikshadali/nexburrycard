@@ -1,0 +1,119 @@
+body{
+  font-family: "Poppins", sans-serif;
+}
+.menu{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: 70px;
+}
+.btn-blue{
+  background-color: #00819d;
+  color: #fff;
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.btn-blue:focus{
+  box-shadow: none;
+
+}
+.btn-blue:focus-visible{
+  outline: none;
+  box-shadow: none;
+}
+.card-top-div{
+  height: 70px;
+}
+.cart-div{
+  height: 100%;
+  position: relative;
+}
+
+.cartItemCount{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #00819d;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  top:10px;
+  right: 20px;
+}
+.totalqty{
+  display: flex;
+  background-color: #fff;
+  color: #000;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  
+}
+.card {
+  cursor: pointer;
+}
+.card-img-top{
+  transition: all 1s ease-in-out;
+}
+.card-img-top:hover{
+  transform: scale(0.9);
+}
+.total-amnt{
+  color: #00819d;
+  font-weight: 700;
+}
+.digit{
+  font-size: 22px;
+  padding-left: 3px;
+  
+}
+.card-title{
+  color: #00819d;
+}
+.card-text{
+  font-size: 0.8rem;
+}
+.top-deal{
+  letter-spacing: 0px;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 20px;
+  
+}
+.top-deal::after{
+  content: "";
+  position: absolute;
+  background-color: #00819d;
+  left: 16px;
+  top: 100%;
+  height: 3px;
+  width: 60px;
+
+}
+.ribbon {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+}
+.ribbon {
+  --f: .5em; /* control the folded part */
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 1.8;
+  padding-inline: 1lh;
+  padding-bottom: var(--f);
+  border-image: conic-gradient(#0008 0 0) 51%/var(--f);
+  clip-path: polygon(
+    100% calc(100% - var(--f)),100% 100%,calc(100% - var(--f)) calc(100% - var(--f)),var(--f) calc(100% - var(--f)), 0 100%,0 calc(100% - var(--f)),999px calc(100% - var(--f) - 999px),calc(100% - 999px) calc(100% - var(--f) - 999px));
+  transform: translate(calc((cos(45deg) - 1)*100%), -100%) rotate(-45deg);
+  transform-origin: 100% 100%;
+  background-color: #00819d; /* the main color  */
+}

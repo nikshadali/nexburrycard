@@ -46,8 +46,9 @@ const App = () => {
       let totalAmount = (val.qty * val.price) + acc;
       return totalAmount
    },0)
+
   const increseQty = (id) => {
-    setProducts((prevProduct) => prevProduct.map((product => product.id === id ? {...product, qty: product.qty +1} : product))
+    setProducts((prevProduct) => prevProduct.map((item => item.id === id ? {...item, qty: item.qty +1} : item))
      )
     }
   
